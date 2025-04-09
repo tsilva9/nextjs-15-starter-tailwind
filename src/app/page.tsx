@@ -1,4 +1,4 @@
-import HomePage from '@/app/(delete-this-and-modify-page.tsx)/HomePage';
+import BasicScene from "@/three/basic-scene";
 
 /**
  * The main page component that renders the HomePage component.
@@ -6,7 +6,11 @@ import HomePage from '@/app/(delete-this-and-modify-page.tsx)/HomePage';
  * @returns {JSX.Element} The rendered HomePage component.
  */
 const Page = () => {
-    return <HomePage />;
+    return (
+        <div className="w-[100vw] h-[100vh]">
+            <BasicScene />
+        </div>
+    );
 };
 
 export default Page;
